@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IP Geo Follow</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <div>
+          <h1>IP Geo Follow</h1>
+          <p id="statusText">读取中...</p>
+        </div>
+        <label class="switch" title="启用或暂停定位注入">
+          <input id="enabledToggle" type="checkbox">
+          <span></span>
+        </label>
+      </header>
+
+      <section class="rows" aria-label="当前定位">
+        <div class="row">
+          <span>IP</span>
+          <strong id="ipText">-</strong>
+        </div>
+        <div class="row">
+          <span>位置</span>
+          <strong id="locationText">-</strong>
+        </div>
+        <div class="row split">
+          <div>
+            <span>纬度</span>
+            <strong id="latitudeText">-</strong>
+          </div>
+          <div>
+            <span>经度</span>
+            <strong id="longitudeText">-</strong>
+          </div>
+        </div>
+        <div class="row">
+          <span>更新时间</span>
+          <strong id="updatedAtText">-</strong>
+        </div>
+      </section>
+
+      <button id="refreshButton" type="button">立即刷新</button>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

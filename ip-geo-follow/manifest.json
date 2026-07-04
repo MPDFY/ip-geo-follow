@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "IP Geo Follow",
+  "version": "1.0.0",
+  "description": "Make browser GPS geolocation follow the current public IP location.",
+  "permissions": [
+    "alarms",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://ipwho.is/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "IP Geo Follow"
+  }
+}

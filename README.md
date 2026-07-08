@@ -247,18 +247,3 @@ navigator.geolocation.getCurrentPosition(console.log)
 ```
 
 If the returned `latitude` and `longitude` are close to the current VPN / proxy exit IP location, the extension is working.
-
-## Upload Updates
-
-After editing the project locally, upload changes with:
-
-```powershell
-cd E:\IP
-git add .
-git commit -m "describe your change"
-git push
-```
-
-## License
-
-MIT
